@@ -83,6 +83,7 @@ typings/
 /dist
 /tmp
 /out-tsc
+/target
 
 # dependencies
 /node_modules
