@@ -37,5 +37,3 @@
 @[86](map)
 @[87](forEach(Indexed))
 @[90-96](partition)
-
----
