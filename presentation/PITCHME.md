@@ -44,3 +44,8 @@
 @[89-91](map)
 @[93-95](forEach(Indexed))
 @[97-106](partition)
+
+---
+@snap[midpoint]
+Vragen?
+@snapend
