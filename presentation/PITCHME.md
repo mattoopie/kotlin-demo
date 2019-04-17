@@ -30,6 +30,11 @@
 @[31-34](Data classes en primary constructor)
 @[37-41](Extension functies)
 
-
+---?code=src/test/kotlin/com/mattoopie/kotlindemo/DemoTest.kt&lang=kotlin&title=Collections
+@[65-78](Maak een aantal instanties van Persoon)
+@[79-85](filter)
+@[86](map)
+@[87](forEach(Indexed))
+@[90-96](partition)
 
 ---
