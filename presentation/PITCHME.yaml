@@ -1,3 +1,4 @@
 layout: center-left
 theme: black
 highlight: dracula
+code-line-numbers: true

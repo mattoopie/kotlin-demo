@@ -14,18 +14,18 @@ fun doSomethingToNumber(number: Int, transform: (Int) -> Int): Int = transform(n
 
 /* Nullability */
 fun getStringNullsafe(): String = "Text"
-
 fun getStringNullable(): String? = if (random() > 0.5) "Text" else null
-//fun checkNullabilityCompiler() {
-//    var text = getStringNullsafe()
-//    // text = getStringNullable()
-//    text = getStringNullable() ?: "Use this if null"
-//    text = getStringNullable()!! // Gooit NullPointerException als null
-//
-//    var length = getStringNullsafe().length
-//    // length = getStringNullable().length // Compileert niet
-//    length = getStringNullable()?.length ?: 0 // Als getStringNullable null is: gebruik 0, anders: gebruik het resultaat met .length
-//}
+fun checkNullabilityCompiler() {
+    var text = getStringNullsafe()
+    // text = getStringNullable() // Compileert niet
+    text = getStringNullable() ?: "Use this if null"
+    text = getStringNullable()!! // Gooit NullPointerException als null
+
+    var length = getStringNullsafe().length
+    // length = getStringNullable().length // Compileert niet
+    length = getStringNullable()?.length
+        ?: 0 // Als getStringNullable null is: gebruik 0, anders: gebruik het resultaat met .length
+}
 
 /* Data classes (test e) */
 data class Persoon(
