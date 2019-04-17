@@ -7,7 +7,7 @@
 @snapend
 
 ---
-@snap[north-east]
+@snap[north-west]
 ## Inhoud
 @snapend
 
@@ -16,7 +16,7 @@
 * Vragen
 
 ---
-@snap[north-east]
+@snap[north-west]
 ## Verschil met java
 @snapend
 
