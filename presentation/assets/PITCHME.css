@@ -1,3 +1,9 @@
 .hljs {
     white-space: pre-wrap;
 }
+
+img {
+    border: unset;
+    background: unset;
+    box-shadow: unset;
+}
