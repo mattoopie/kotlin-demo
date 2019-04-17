@@ -9,7 +9,7 @@ fun hello(name: String = "Piet"): String = "Hello $name"
 /* Lambda's (test c) */
 fun containsEvenNumber(collection: Collection<Int>): Boolean = collection.any { it % 2 == 0 }
 
-/* Zelf een lambda maken (test d) */
+/* Zelf een lambda maken, higher-order functions (test d) */
 fun doSomethingToNumber(number: Int, transform: (Int) -> Int): Int = transform(number)
 
 /* Nullability */

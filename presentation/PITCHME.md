@@ -25,7 +25,7 @@
 @[1-2](Importeren van Java libraries)
 @[5-7](Default en named arguments)
 @[10](Gebruik maken van een lambda expressie)
-@[13](Zelf een lambda maken)
+@[13](Zelf een lambda maken, higher order function)
 @[16-17](Nullability)
 @[19-20](Omgaan met nullability van waarde zelf)
 @[22-23](Omgaan met nullability van waarde zelf)
