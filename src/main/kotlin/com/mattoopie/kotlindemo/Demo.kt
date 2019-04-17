@@ -16,15 +16,26 @@ fun doSomethingToNumber(number: Int, transform: (Int) -> Int): Int = transform(n
 fun getStringNullsafe(): String = "Text"
 fun getStringNullable(): String? = if (random() > 0.5) "Text" else null
 fun checkNullabilityCompiler() {
+    // String, type inference
     var text = getStringNullsafe()
-    // text = getStringNullable() // Compileert niet
-    text = getStringNullable() ?: "Use this if null"
-    text = getStringNullable()!! // Gooit NullPointerException als null
 
+    // Compileert niet, want String?
+    // text = getStringNullable()
+
+    // Elvis operator: als iets ervoor null is, gebruik dan wat erna staat
+    text = getStringNullable() ?: "Use this if null"
+
+    // Null assertion: gooit NPE als null
+    text = getStringNullable()!!
+
+    // .length gaat goed met null safe waarde (String)
     var length = getStringNullsafe().length
-    // length = getStringNullable().length // Compileert niet
-    length = getStringNullable()?.length
-        ?: 0 // Als getStringNullable null is: gebruik 0, anders: gebruik het resultaat met .length
+
+    // Compileert niet, want String?
+    // length = getStringNullable().length
+
+    // Als getStringNullable null is: gebruik 0, anders: gebruik het resultaat met .length
+    length = getStringNullable()?.length ?: 0
 }
 
 /* Data classes (test e) */
