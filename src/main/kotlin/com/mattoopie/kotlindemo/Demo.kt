@@ -11,6 +11,7 @@ fun containsEvenNumber(collection: Collection<Int>): Boolean = collection.any { 
 
 /* Zelf een lambda maken, higher-order functions (test d) */
 fun doSomethingToNumber(number: Int, transform: (Int) -> Int): Int = transform(number)
+// doSomethingToNumber(5) { it + 6 } geeft 11
 
 /* Nullability */
 fun getStringNullsafe(): String = "Text"

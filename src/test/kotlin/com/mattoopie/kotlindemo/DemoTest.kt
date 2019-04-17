@@ -27,8 +27,8 @@ class FunctionsTest {
     @Test
     fun e_testDataClasses() {
         val persoon = Persoon(
-            naam = "Kees",
-            geboortedatum = LocalDate.now()
+                naam = "Kees",
+                geboortedatum = LocalDate.now()
         )
         assertThat(persoon.naam).isEqualTo("Kees")
     }
@@ -41,58 +41,68 @@ class FunctionsTest {
     @Test
     fun g_testListExtension() {
         val personen = listOf<Persoon>(
-            Persoon(
-                naam = "Kees",
-                geboortedatum = LocalDate.now()
-            ),
-            Persoon(
-                naam = "Piet",
-                geboortedatum = LocalDate.now().minusDays(3)
-            ),
-            Persoon(
-                naam = "Klaas",
-                geboortedatum = LocalDate.now().plusDays(5)
-            )
+                Persoon(
+                        naam = "Kees",
+                        geboortedatum = LocalDate.now()
+                ),
+                Persoon(
+                        naam = "Piet",
+                        geboortedatum = LocalDate.now().minusDays(3)
+                ),
+                Persoon(
+                        naam = "Klaas",
+                        geboortedatum = LocalDate.now().plusDays(5)
+                )
         )
         assertThat(personen.sortByGeboortedatum())
-            .extracting("naam")
-            .containsExactly("Piet", "Kees", "Klaas")
+                .extracting("naam")
+                .containsExactly("Piet", "Kees", "Klaas")
     }
 
     @Test
     fun h_testCollections() {
         val vandaag = LocalDate.now()
         val personen = listOf(
-            Persoon(
-                naam = "Kees",
-                geboortedatum = vandaag
-            ),
-            Persoon(
-                naam = "Piet",
-                geboortedatum = vandaag.minusDays(3)
-            ),
-            Persoon(
-                naam = "Klaas",
-                geboortedatum = vandaag.plusDays(5)
-            )
-        )
-        assertThat(personen.filter { it.naam == "Piet" })
-            .containsExactly(
                 Persoon(
-                    naam = "Piet",
-                    geboortedatum = vandaag.minusDays(3)
+                        naam = "Kees",
+                        geboortedatum = vandaag
+                ),
+                Persoon(
+                        naam = "Piet",
+                        geboortedatum = vandaag.minusDays(3)
+                ),
+                Persoon(
+                        naam = "Klaas",
+                        geboortedatum = vandaag.plusDays(5)
                 )
-            )
-        assertThat(personen.map { it.naam.length }).containsExactly(4, 4, 5)
-        personen.forEachIndexed { index, persoon -> println("$index - ${persoon.naam}") }
+        )
 
+        assertThat(
+                personen.filter { it.naam == "Piet" }
+        ).containsExactly(
+                Persoon(
+                        naam = "Piet",
+                        geboortedatum = vandaag.minusDays(3)
+                )
+        )
 
-        val (geborenVoorVandaag, geborenVanafVandaag) = personen.partition { it.geboortedatum < vandaag }
+        assertThat(
+                personen.map { it.naam.length }
+        ).containsExactly(4, 4, 5)
+
+        personen.forEachIndexed { index, persoon ->
+            println("$index - ${persoon.naam}")
+        }
+
+        val (geborenVoorVandaag, geborenVanafVandaag)
+                = personen.partition { it.geboortedatum < vandaag }
+
         assertThat(geborenVoorVandaag)
-            .extracting("naam")
-            .containsExactly("Piet")
+                .extracting("naam")
+                .containsExactly("Piet")
+
         assertThat(geborenVanafVandaag)
-            .extracting("naam")
-            .containsExactly("Kees", "Klaas")
+                .extracting("naam")
+                .containsExactly("Kees", "Klaas")
     }
 }
