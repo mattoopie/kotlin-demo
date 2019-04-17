@@ -1,6 +1,6 @@
 # Kotlin
 
-![Kotlin logo](assets/logo.png)
+![Kotlin logo](presentation/assets/logo.png)
 
 ---
 ## Slide 2
