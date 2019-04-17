@@ -35,8 +35,10 @@ data class Persoon(
 
 /* Extension functions (test f en g) */
 fun String.addText(text: String): String = this.plus(text)
+// Gebruik: "Appel".addText("taart")
 
 fun List<Persoon>.sortByGeboortedatum() = this.sortedBy { it.geboortedatum }
+// Gebruik: personen.sortByGeboortedatum()
 
 /* Collections (test h) */
 // Standaardlibraries

@@ -23,7 +23,13 @@
 ---?code=src/main/kotlin/com/mattoopie/kotlindemo/Demo.kt&lang=kotlin&title=Code
 @[1-2](Importeren van Java libraries)
 @[5-7](Default en named arguments)
-@[15-27](Nullability)
+@[10](Gebruik maken van een lambda expressie)
+@[13](Zelf een lambda maken)
+@[16-17](Nullability)
+@[19-27](Omgaan met nullability)
+@[31-34](Data classes en primary constructor)
+@[37-41](Extension functies)
+
 
 
 ---
