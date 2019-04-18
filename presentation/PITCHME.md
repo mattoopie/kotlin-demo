@@ -17,22 +17,22 @@
 
 ---
 @snap[north-west]
-## Verschil met java
+## Java
 @snapend
 
 @snap[west]
-### Java
-
 * Static methodes
 * Checked exceptions (throws ...)
 * Wildcard types (<? extends E>)
 * Ternary operator (bool ? a : b)
+@snapend
 
+---
+@snap[north-west]
+## Kotlin
 @snapend
 
 @snap[west]
-### Kotlin
-
 * Lambda expressies
 * Extension functies
 * Null safety
@@ -42,7 +42,6 @@
 * Range expressies
 * Companion objects
 * Mutable en immutable collections
-
 @snapend
 
 ---
