@@ -2,7 +2,7 @@ import org.assertj.core.api.Assertions.assertThat
 import java.time.LocalDate
 import kotlin.test.Test
 
-class FunctionsTest {
+class DemoTest {
 
     @Test
     fun a_testNamedArguments() {
