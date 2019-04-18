@@ -105,4 +105,20 @@ class FunctionsTest {
                 .extracting("naam")
                 .containsExactly("Kees", "Klaas")
     }
+
+    @Test
+    fun i_testGetter() {
+        val auto = Auto()
+        assertThat(auto.oppervlakte).isEqualTo(150000)
+    }
+
+    @Test
+    fun j_testSetter() {
+        val auto = Auto()
+        assertThat(auto.aantalPersonen).isEqualTo(4)
+        auto.aantalPersonen = 6
+        assertThat(auto.aantalPersonen).isEqualTo(6)
+        auto.aantalPersonen = -3
+        assertThat(auto.aantalPersonen).isEqualTo(6)
+    }
 }

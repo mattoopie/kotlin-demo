@@ -1,4 +1,4 @@
-@snap[north]
+@snap[south]
 # Kotlin
 @snapend
 
@@ -20,6 +20,31 @@
 ## Verschil met java
 @snapend
 
+@snap[west]
+### Java
+
+* Static methodes
+* Checked exceptions (throws ...)
+* Wildcard types (<? extends E>)
+* Ternary operator (bool ? a : b)
+
+@snapend
+
+@snap[west]
+### Kotlin
+
+* Lambda expressies
+* Extension functies
+* Null safety
+* Smart casts
+* Primary constructors
+* Type inference
+* Range expressies
+* Companion objects
+* Mutable en immutable collections
+
+@snapend
+
 ---
 ---?code=src/main/kotlin/com/mattoopie/kotlindemo/Demo.kt&lang=kotlin&title=Code
 @[1-2](Importeren van Java libraries)
@@ -37,6 +62,8 @@
 @[43-46](Data classes en primary constructor)
 @[49-50](Extension functies)
 @[52-53](Extension functies)
+@[57-64](Gebruik van when ipv switch/case)
+@[68-77](Getter en setter)
 
 ---?code=src/test/kotlin/com/mattoopie/kotlindemo/DemoTest.kt&lang=kotlin&title=Collections
 @[65-78](Maak een aantal instanties van Persoon)

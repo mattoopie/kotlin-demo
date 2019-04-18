@@ -15,6 +15,7 @@ fun doSomethingToNumber(number: Int, transform: (Int) -> Int): Int = transform(n
 
 /* Nullability */
 fun getStringNullsafe(): String = "Text"
+
 fun getStringNullable(): String? = if (random() > 0.5) "Text" else null
 fun checkNullabilityCompiler() {
     // String, type inference
@@ -41,8 +42,8 @@ fun checkNullabilityCompiler() {
 
 /* Data classes (test e) */
 data class Persoon(
-    val naam: String,
-    val geboortedatum: LocalDate
+        val naam: String,
+        val geboortedatum: LocalDate
 )
 
 /* Extension functions (test f en g) */
@@ -51,6 +52,29 @@ fun String.addText(text: String): String = this.plus(text)
 
 fun List<Persoon>.sortByGeboortedatum() = this.sortedBy { it.geboortedatum }
 // Gebruik: personen.sortByGeboortedatum()
+
+/* when */
+fun Int?.whenExample(): String =
+        when (this) {
+            null -> "Null"
+            0, 1 -> "Laag"
+            in 5..10 -> "Middel"
+            in 11..Int.MAX_VALUE -> "Hoog"
+            else ->
+                throw IllegalArgumentException()
+        }
+
+/* Getter en setter (test i en j) */
+class Auto {
+    var breedte: Int = 250
+    var lengte: Int = 600
+    val oppervlakte: Int
+        get() = breedte * lengte
+    var aantalPersonen: Int = 4
+        set(aantal) {
+            if (aantal > 0) field = aantal
+        }
+}
 
 /* Collections (test h) */
 // Standaardlibraries
