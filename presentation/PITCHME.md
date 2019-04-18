@@ -20,25 +20,36 @@
 ## Java
 @snapend
 
-* Static methodes
+* Static methods
 * Checked exceptions (throws ...)
 * Wildcard types (<? extends E>)
 * Ternary operator (bool ? a : b)
+
 ---
 @snap[north-west]
 ## Kotlin
 @snapend
 
-* Lambda expressies
-* Extension functies
+* Lambda expressions
+* Extension functions
 * Null safety
 * Smart casts
 * Primary constructors
 * Type inference
-* Range expressies
+* Range expressions
 * Companion objects
 * Mutable en immutable collections
+
 ---
+@snap[north-west]
+## Functionele aspecten
+@snapend
+
+* First class functions
+* Higher-order functions
+* Lambda expressions
+* Currying
+
 ---?code=src/main/kotlin/com/mattoopie/kotlindemo/Demo.kt&lang=kotlin&title=Code
 @[1-2](Importeren van Java libraries)
 @[5-7](Signature, default en named arguments)
