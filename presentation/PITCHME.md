@@ -58,7 +58,7 @@
 @[49-50](Extension functies)
 @[52-53](Extension functies)
 @[57-64](Gebruik van when ipv switch/case)
-@[68-77](Getter en setter)
+@[67-77](Getter en setter)
 
 ---?code=src/test/kotlin/com/mattoopie/kotlindemo/DemoTest.kt&lang=kotlin&title=Collections
 @[65-78](Maak een aantal instanties van Persoon)
