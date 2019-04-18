@@ -20,19 +20,15 @@
 ## Java
 @snapend
 
-@snap[west]
 * Static methodes
 * Checked exceptions (throws ...)
 * Wildcard types (<? extends E>)
 * Ternary operator (bool ? a : b)
-@snapend
-
 ---
 @snap[north-west]
 ## Kotlin
 @snapend
 
-@snap[west]
 * Lambda expressies
 * Extension functies
 * Null safety
@@ -42,8 +38,6 @@
 * Range expressies
 * Companion objects
 * Mutable en immutable collections
-@snapend
-
 ---
 ---?code=src/main/kotlin/com/mattoopie/kotlindemo/Demo.kt&lang=kotlin&title=Code
 @[1-2](Importeren van Java libraries)
