@@ -13,6 +13,7 @@
 
 * Verschil met Java
 * Code
+* Functionele aspecten
 * Vragen
 
 ---
@@ -40,16 +41,6 @@
 * Companion objects
 * Mutable en immutable collections
 
----
-@snap[north-west]
-## Functionele aspecten
-@snapend
-
-* First class functions
-* Higher-order functions
-* Lambda expressions
-* Currying
-
 ---?code=src/main/kotlin/com/mattoopie/kotlindemo/Demo.kt&lang=kotlin&title=Code
 @[1-2](Importeren van Java libraries)
 @[5-7](Signature, default en named arguments)
@@ -75,6 +66,16 @@
 @[89-91](map)
 @[93-95](forEach(Indexed))
 @[97-106](partition)
+
+---
+@snap[north-west]
+## Functionele aspecten
+@snapend
+
+* First class functions
+* Higher-order functions
+* Lambda expressions
+* Currying
 
 ---
 @snap[midpoint]
