@@ -15,7 +15,6 @@ fun doSomethingToNumber(number: Int, transform: (Int) -> Int): Int = transform(n
 
 /* Nullability */
 fun getStringNullsafe(): String = "Text"
-
 fun getStringNullable(): String? = if (random() > 0.5) "Text" else null
 fun checkNullabilityCompiler() {
     // String, type inference
